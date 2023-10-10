@@ -1,350 +1,750 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>responsive website</title>
-   <!---boxicons link--->
-   <link rel="stylesheet"
-   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <!--- remixions link -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <!--- google fonts link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,300;0,400;0,500;1,600;1,700;1,800;1,900&family=Vollkorn&display=swap" rel="stylesheet">
-<style>
-  *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
- text-decoration: none;
-}
-header{
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 33px 9%;
-    background: transparent;
-}
-body{
-    background:blue;
-    }
-.logo{
-    font-size: 30px;
-    font-weight: 700;
-    color: white;
-}
-.navlist{
-    display: flex;
-}
-.navlist li{
-    list-style: none;
-}
-.navlist a{
-    color: white;
-    margin-left: 60px;
-    font-size: 16px;
-    font-weight:600;
-    border-bottom: 2px solid white;
-    transition: all .55s ease;
-    list-style: none;
-     text-decoration: none;
-}
-.navlist1 a:hover{    
-border-bottom: 2px solid white;
-
-}
-#menu-icon{
-    color: white;
-    font-size: 30px;
-    z-index: 1000;
-   cursor: pointer;
-   display: none;
-}
- .hero{
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(245.59deg, #4d9559 0%,#38703d 28.53% #133917 75.52%);
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 2rem;
-
-}
-   section{
-   
-    padding: 0 19%;   
-
-  }
-   .hero-text h5{
-     font-size: 14px;
-     font: weight 400px;
-     color: white;
-     margin-bottom: 40px;
- }
-   .hero-text h1{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 90px;
-     line-height: 1;
-     color: white;
-     margin: 0 0 45px;
-
-}
-   .hero-text h4{
-          font-size: 18px;
-          font-weight: 600;
-          color: white;
-          margin-bottom:10px;
-
-}
-   .hero-text p{
-         color: white;
-         font-size: 15px;
-         line-height: 1.9;
-         margin-bottom: 40px;
-
-}
-   .hero-img img{
-         width: 500px;
-         height: auto;
-}
-    .hero-text a{
-     display: inline-block;
-     color: white;
-     background:#4d6c95;
-     border: 1px solid transparent;
-     padding: 12px 30px;
-     line-height: 1.4;
-     font-size: 14px;
-     font-weight:500;
-     border-radius: 30px;
-     text-transform: uppercase;
-     transition: all .55s ease;
-}
-    .hero-text a:hover{
-     background: transparent;
-     border: 1px solid white;
-     transform: translateX(8px);
-
-}
-    .hero-text a.ctcc{
-            background: transparent;
-            border: 1px solid white;
-            margin-left: 20px;
-
-}
-    .hero-text a.ctcc i{
-         vertical-align:middle;
-         margin-right: 5px;
-
-
-}
-.icons{
-    position: absolute;
-    top: 50%;
-    padding: 0 9%;
-     transform: translateY(-50%);
-
-}
-.icons i{
-    display: block;
-    margin: 26px 0;
-    font-size: 24px;
-    color: rgb(255, 255, 255);
-    transition: all .55s ease;
-}
-
-.icons i:hover{
-      color: #e00f0f;
-      transform: translateY(-5px);
-
-}
-
-.scroll-do{
-    position: absolute;
-    bottom: 6%;
-    right: 9%;
-}
-    .scroll-do i{
-        display: block;
-        padding: 12px;
-        font-size: 25px;
-        color: white;
-        background: #4d9559;
-        border-radius: 30px;
-        transition: all .50s ease;
-
-    }
-.scroll-do i:hover{
-    transform: translateY(-5px);
-
-}
-@media (max-width: 1535px){
-    header{
-        padding: 15px 3%;
-        transition:  .2s;
-
-    }
-    .icons{
-        padding: 0 3%;
-        transition: .2s;
-    }
-    .scroll-do{
-     right: 3%;
-     transition: .2s;    
-    }
-}
-
-@media (max-width: 1460px){
-    section{
-        padding: 0 12%;
-        transition:  .2s;
-    }
-}
-@media (max-width: 1340px){
-        .hero-img img{
-            width:100%;
-            height: auto;
-
-           }
-           .hero-text h1{
-            font-size: 75px;
-            margin: 0 0 30px;
-           }
-           .hero-text h5{
-            margin-bottom: 25px;
-
-           }
-}
-@media (max-width: 1195px){
-        section{
-            padding: 0 3%;
-            transition:  .2s;
-        }
-        .hero-text{
-            padding-top: 115px;
-        }
-        .hero-img{
-            text-align: center;
-        }
-        .hero-img img{
-            width: 500px;
-            height: auto;
-        }
-        .hero{
-            height: 100%;
-            gap: 1rem;
-            grid-template-columns: 1fr;
-
-        }
-        .icons{
-            display: none;
-        }
-         .scroll-do{
-            display: none;
-         }
-
-}
-@media (max-width: 991px) {
-    header {
-      padding: 15px;
-    }
-    .navlist {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100vh;
-      background: blue;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 50px 20px;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in-out;
-    }
-    .navlist.open {
-      transform: translateX(0);
-    }
-    .navlist li {
-      margin-bottom: 20px;
-    }
-    .navlist a {
-      margin-left: 0;
-    }
-    #menu-icon {
-      display: block;
-    }
-  }
-   
-@media (max-width: 680px){
-         .hero-img img{
-            width: 100%;
-            height:auto;
-         }
-}
-
-</style>
-</head>
-<body>
-        
-       <header>
-           <a href="" class="logo">COCO-PANDA</a>
-           <ul class="navlist">
-            <li><a href="">Home</a></li>
-            <li><a href=""> About</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Town hall</a></li>
-            <li><a href="">Logo</a></li>
-            <li><a href="">Contact</a></li>
-           </ul>
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </header>
-
-            <section class="hero">
-              <div class="hero-text">
-                <h5>#2 Trending</h5>
-                <h4>Lead Supercell</h4>
-                <h1>PANDA</h1>
-                <p>Join million of players worlwind as you build your village, <br> raise a
-                clan, and compete in epic Cler Wars !!</p>
-                <a href="#">Compare</a>
-                <a href="#" class="ctcc"><i class='bx bx-play'></i>Watch Gameplay</a>
+<html>
+  <head>
+    <title>Image Transition Example</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container-fluid main" id="translateButton">
+      <!-- first component -->
+      <div
+        class="container d-flex align-items-center justify-content-center component1"
+        style="height: 100vh"
+      >
+        <div class="row">
+          <div class="col-md-12">
+            <div class="d-flex">
+              <div class="image-wrapper left">
+                <img src="./act_ind.png" alt="Image 1" id="curser" />
+              </div>
+              <div class="image-wrapper center">
+                <img src="./act_ind.png" alt="Image 2" id="curser" />
+              </div>
+              <div class="image-wrapper right">
+                <img src="./act_ind.png" alt="Image 3" id="curser" />
+              </div>
+              <div class="image-wrapper end">
+                <img src="./act_ind.png" alt="Image 4" id="curser" />
               </div>
 
-              <div class="hero-img">
-                <img src="https://firebasestorage.googleapis.com/v0/b/amoga-2e85c.appspot.com/o/az.jpeg?alt=media&token=0cf066a3-8717-483c-a44b-908ddd531086" alt="">
+              <div class="image-wrapper last">
+                <img src="./logo.png" alt="Image 4" id="curser" />
               </div>
-            </section>
-          <div class="icons">
-            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-            <a href="#"><i class='bx bxl-youtube'></i></a>
-             <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- second compnent -->
+      <div
+        class="container d-flex justify-content-center py-5 component2"
+        style="height: 100vh"
+      >
+        <div class="row py-5" style="min-height: 90vh">
+          <div class="col-md-4" style="align-self: flex-start">
+            <h5 class="textElement">A space for strategic connections</h5>
+          </div>
+          <div class="col-md-4" style="align-self: center">
+            <img src="./logo.png" alt="Image 4" id="curser" />
+          </div>
+          <div class="col-md-4" style="align-self: flex-end">
+            <div class="d-flex align-items-center textElement">
+              <h5>where extraordinary ventures take flight.</h5>
+              <img
+                src="./ph_arrow-up-thin.png"
+                alt=""
+                id="curser"
+                onclick="secondComponent()"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- third component -->
+      <div
+        class="container d-flex justify-content-center py-5 component3"
+        style="height: 100vh"
+      >
+        <div class="row py-5 text-center" style="min-height: 90vh">
+          <div class="col-md-12 pb-5">
+            <img src="./logo.png" alt="Image 4" width="50px" id="curser" />
+          </div>
+          <div class="col-md-12 py-5">
+            <h2 class="paragraph textElement">
+              A private social club in Singapore by invite only. <br />
+              Enjoy exclusive access to luxury amenities, <br />
+              personalized services, and networking opportunities <br />
+              with influential individuals across industries.
+            </h2>
+          </div>
+          <div class="col-md-12">
+            <div style="text-align: right" class="arrow-align textElement">
+              <img
+                src="./ph_arrow-up-thin.png"
+                alt=""
+                id="curser"
+                onclick="thirdComponent()"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fourth component -->
+      <div
+        class="container d-flex justify-content-center py-5 component4"
+        style="height: 100vh"
+      >
+        <div class="row py-5 text-center" style="min-height: 90vh">
+          <div class="col-md-12 pb-5">
+            <img src="./logo.png" alt="Image 4" width="50px" id="curser" />
+          </div>
+          <div class="col-md-12 py-5">
+            <h4>Take your first step into our world</h4>
+            <div class="d-flex justify-content-center">
+              <div class="w-45 d-flex align-items-center">
+                <input
+                  type="text"
+                  placeholder="Enter referral code "
+                  class="form-control form-input py-2 px-5"
+                  id="referral"
+                />
+
+                <div class="arrow-align textElement">
+                  <img
+                    src="./ph_arrow-up-thin.png"
+                    alt=""
+                    id="curser"
+                    height="50"
+                    onclick="fourthComponent()"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fifth componentn -->
+      <div
+        class="container d-flex justify-content-center py-5 component5"
+        style="height: 100vh"
+      >
+        <div class="row py-5 text-center" style="min-height: 90vh">
+          <div class="col-md-12 pb-5">
+            <img src="./logo.png" alt="Image 4" width="50px" id="curser" />
+          </div>
+          <div class="col-md-12 py-5">
+            <h4>Take your first step into our world</h4>
+            <div class="d-flex justify-content-center">
+              <div class="w-45 d-flex align-items-center">
+                <button
+                  class="rounded bg-transparent"
+                  style="
+                    color: #d4af33;
+                    padding: 15px 85px 15px 85px;
+                    box-shadow: 1px -1px 4px #d5af33 inset;
+                  "
+                  type="button"
+                >
+                  O3RICHARD
+                </button>
+                <div class="arrow-align textElement">
+                  <img
+                    src="./ph_arrow-up-thin.png"
+                    alt=""
+                    id="curser"
+                    height="50"
+                    onclick="fifthComponent()"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sixth component 
+        form component
+          formo 1 -->
+      <form id="myForm" class="component6">
+        <div class="container py-5 px-5 first">
+          <div class="row">
+            <div class="col-md-6 px-5" class="imgcenter">
+              <img src="logo.png" alt="" id="curser" />
+            </div>
+            <div class="col-md-6">
+              <div class="dots-container py-3">
+                <span class="dot1 opacity-100"></span>
+                <span class="connector opacity-50"></span>
+                <span class="dot2 opacity-50"></span>
+                <span class="connector opacity-50"></span>
+                <span class="dot3 opacity-50"></span>
+              </div>
+              <div class="py-4">
+                <h3 class="text-white">Membership Registration</h3>
+                <p style="color: #fffaf1">
+                  Take your first step into O3 by completing our membership
+                  registration form
+                </p>
+              </div>
+              <div
+                class="card bg-transparent py-4"
+                style="border: 1px solid #c2b59b"
+              >
+                <div class="card-header">
+                  <h4 style="color: #c2b59b">Personal Information</h4>
+                  <!-- name -->
+                  <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control form bg-transparent border-0 border-bottom text-white"
+                    />
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <!-- date of birth field -->
+                      <div class="mb-3">
+                        <label class="form-label">Date Of Birth</label>
+                        <input
+                          type="date"
+                          name="dateofbirth"
+                          class="form-control form bg-transparent border-0 border-bottom text-white"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <!-- nationality field -->
+                      <div class="mb-3">
+                        <label class="form-label">Nationality</label>
+                        <select
+                          name="nationality"
+                          size="1"
+                          class="form-control form bg-transparent border-0 border-bottom text-white"
+                        >
+                          <option
+                            value="Singapore"
+                            selected
+                            class="bg-transparent text-black"
+                          >
+                            Singapore
+                          </option>
+                          <option
+                            value="Pakistan"
+                            class="bg-transparent text-black"
+                          >
+                            Pakistan
+                          </option>
+                          <option
+                            value="nepal"
+                            class="bg-transparent text-black"
+                          >
+                            Nepal
+                          </option>
+                          <option
+                            value="india"
+                            class="bg-transparent text-black"
+                          >
+                            India
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Email -->
+                  <div class="mb-3">
+                    <label class="form-label">Preferred Email</label>
+                    <input
+                      name="email"
+                      type="email"
+                      class="form-control form bg-transparent border-0 border-bottom text-white"
+                    />
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <!-- Mobile Number -->
+                      <div class="mb-3">
+                        <label class="form-label">Mobile Number</label>
+                        <input
+                          name="mobilenumber"
+                          type="text"
+                          class="form-control form bg-transparent border-0 border-bottom text-white"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <!-- Postal Address -->
+                      <div class="mb-3">
+                        <label class="form-label">Postal Address</label>
+                        <input
+                          name="postaladdress"
+                          type="number"
+                          class="form-control form bg-transparent border-0 border-bottom text-white"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Preferred Mailing Address -->
+                  <div class="mb-3">
+                    <label class="form-label">Preferred Mailing Address</label>
+                    <input
+                      name="mailaddress"
+                      type="email"
+                      class="form-control form bg-transparent border-0 border-bottom text-white"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card bg-transparent my-4"
+                style="border: 1px solid #c2b59b"
+              >
+                <div class="card-header">
+                  <h4 style="color: #c2b59b">Employment Details</h4>
+                  <!-- Company name -->
+                  <div class="mb-3">
+                    <label class="form-label">Company Name</label>
+                    <input
+                      name="company"
+                      type="text"
+                      class="form-control form bg-transparent border-0 border-bottom text-white"
+                    />
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <!-- Industry -->
+                      <div class="mb-3">
+                        <label class="form-label">Industry</label>
+                        <input
+                          name="industry"
+                          type="text"
+                          class="form-control form bg-transparent border-0 border-bottom text-white"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <!-- Job Title -->
+                      <div class="mb-3">
+                        <label class="form-label">Job Title</label>
+                        <input
+                          name="jobtitle"
+                          type="text"
+                          class="form-control form bg-transparent border-0 border-bottom text-white"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="d-flex justify-content-end py-4">
+                  <button
+                    class="text-black bg-warning px-4 py-2 rounded"
+                    id="next"
+                    type="button"
+                  >
+                    Next <i class="fa-regular fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- form 2 -->
+        <div class="container py-5 px-5 second">
+          <div class="row">
+            <div class="col-md-6 px-5">
+              <img src="logo.png" alt="" id="curser" />
+            </div>
+            <div class="col-md-6">
+              <div class="dots-container py-3">
+                <span class="dot1 opacity-100"></span>
+                <span class="connector opacity-100"></span>
+                <span class="dot2 opacity-100"></span>
+                <span class="connector opacity-50"></span>
+                <span class="dot3 opacity-50"></span>
+              </div>
+              <div class="mt-3">
+                <h3 class="mb-3 text-white">Membership Registration</h3>
+                <p class="mb-4" style="color: #c2b59b">
+                  Take your first step into O3 by completing our membership
+                  registration form.
+                </p>
+              </div>
+              <div
+                class="card bg-transparent py-4"
+                style="border: 1px solid #c2b59b"
+              >
+                <div class="card-header">
+                  <h4 style="color: #c2b59b">Personal Information</h4>
+
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            name="event"
+                            class="form-check-input"
+                            value="texting"
+                            id="eventexample1"
+                          />
+                          <label class="form-check-label" for="eventexample1">
+                            Texting Event
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            name="event"
+                            value="bartending"
+                            class="form-check-input"
+                            id="eventexample2"
+                          />
+                          <label class="form-check-label" for="eventexample2">
+                            Bartending Show
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            name="event"
+                            value="wine"
+                            class="form-check-input"
+                            id="eventexample3"
+                          />
+                          <label class="form-check-label" for="eventexample3">
+                            Wine Appreciation
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            name="event"
+                            value="others"
+                            class="form-check-input"
+                            id="eventexample4"
+                          />
+                          <label class="form-check-label" for="eventexample4">
+                            Others
+                          </label>
+                        </div>
+                        <div class="mb-3">
+                          <input
+                            name="others"
+                            type="text"
+                            class="form-control form bg-transparent border-0 border-bottom text-white"
+                            style="border-bottom: 1px solid #c2b59b"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card bg-transparent p-4 my-4"
+                style="border: 1px solid #c2b59b"
+              >
+                <h5>Membership Fees</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="oneTimeFee"
+                        >One-time Fee: <br />
+                        $5,000</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="annualFee"
+                        >Annually:<br />
+                        $3,600</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card bg-transparent my-4"
+                style="border: 1px solid #c2b59b"
+              >
+                <div class="card-header">
+                  <h4 style="color: #c2b59b">Empolyment Details</h4>
+                  <!-- Company name -->
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="employment"
+                      id="exampleRadios1"
+                      value="cash"
+                      checked
+                    />
+                    <label class="form-check-label" for="exampleRadios1">
+                      Cash
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="employment"
+                      id="exampleRadios2"
+                      value="creditcard"
+                    />
+                    <label class="form-check-label" for="exampleRadios2">
+                      Credit Card
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="employment"
+                      id="exampleRadios3"
+                      value="banktransfer"
+                    />
+                    <label class="form-check-label" for="exampleRadios3">
+                      Bank Transfer
+                    </label>
+                  </div>
+                  <div>
+                    <p style="color: #c2b59b">
+                      SWIFT Code:UOVBSGSG <br />
+                      Beneficiary Bank Nmae: United Overseas Bank Limited (UOB)
+                      <br />
+                      Bank Address: 80 Raffles Place, Singapore 0489624 <br />
+                      Bankk Account No: 4203221848 <br />
+                      UEN: 202303514W <br /><br />
+                      *We only accept SDG
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card bg-transparent my-4"
+                style="border: 1px solid #c2b59b"
+              >
+                <div class="card-header">
+                  <h4 style="color: #c2b59b">Reference Approval</h4>
+                  <!-- Reference Approval -->
+                  <div class="mb-3">
+                    <label class="form-label">Recommended By</label>
+                    <input
+                      name="reference"
+                      type="text"
+                      class="form-control form bg-transparent border-0 border-bottom text-white"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="d-flex justify-content-between py-4">
+                  <button
+                    id="back"
+                    class="bg-transparent text-warning border border-warning-subtle px-4 py-2 rounded"
+                    type="button"
+                  >
+                    <img src="./Icon.svg" alt="back tick icon" id="curser" />
+                    Back
+                  </button>
+                  <button
+                    class="text-black bg-warning px-5 py-2 rounded"
+                    id="register"
+                    type="submit"
+                  >
+                    Register
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="Scroll-do">
-<a href="#"><i class='bx bxs-down-arrow'></i></a>
+        <div class="container py-5 px-5 third">
+          <div class="row">
+            <div class="col-md-6 px-5">
+              <img src="logo.png.svg" alt="" id="curser" />
+            </div>
+            <div class="col-md-6">
+              <div class="dots-container py-3">
+                <span class="dot1 opacity-100"></span>
+                <span class="connector"></span>
+                <span class="dot2 opacity-100"></span>
+                <span class="connector"></span>
+                <span class="dot3 opacity-100"></span>
+              </div>
+              <div class="py-4">
+                <h3 style="color: whitesmoke">
+                  Thank you for your interest in O3. <br />Your O3 registratiion
+                  is currently under review.
+                </h3>
+                <p style="color: #c2b59b">
+                  We will be in touch shortly, thank you for your patience.
+                </p>
+              </div>
+              <div class="row">
+                <div class="d-flex justify-content-start py-4">
+                  <button
+                    class="text-black bg-warning px-4 py-2 rounded border-0"
+                    id="backtohome"
+                    type="button"
+                    onclick="sixthComponent()"
+                  >
+                    Back to Home
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-     <script>
-      const menuIcon = document.getElementById("menu-icon");
-const navList = document.querySelector(".navlist");
+      </form>
+    </div>
 
-menuIcon.addEventListener("click", function () {
-  navList.classList.toggle("open");
-});
+    <script>
+      const translateButton = document.getElementById("translateButton");
+      const textElement = document.querySelectorAll(".textElement");
+      const left = document.querySelector(".left");
+      const main = document.querySelector(".main");
+      const center = document.querySelector(".center");
+      const right = document.querySelector(".right");
+      const last = document.querySelector(".last");
+      const end = document.querySelector(".end");
+      const imageWrappers = document.querySelectorAll(".image-wrapper");
+      let component1 = document.querySelector(".component1"),
+        component2 = document.querySelector(".component2"),
+        component3 = document.querySelector(".component3"),
+        component4 = document.querySelector(".component4"),
+        component5 = document.querySelector(".component5"),
+        component6 = document.querySelector(".component6");
+      function secondComponent() {
+        component2.classList.add("componenthide");
+        component3.classList.add("componentshow");
+      }
+      function thirdComponent() {
+        component3.classList.add("componenthide");
+        component4.classList.add("componentshow");
+      }
+      function fourthComponent() {
+        let referral = document.getElementById("referral").value;
+        if (referral.length > 0) {
+          component4.classList.add("componenthide");
+          component5.classList.add("componentshow");
+        } else {
+          alert("Please add referral code");
+        }
+      }
+      function fifthComponent() {
+        component5.classList.add("componenthide");
+        component6.classList.add("componentshow");
+      }
+      function sixthComponent() {
+        window.location.reload();
+      }
 
-     </script>
+      translateButton.addEventListener("click", () => {
+        textElement.forEach((element) => {
+          element.style.opacity = "1";
+          element.style.transform = "translateX(0)";
+        });
+      });
 
-<script src="https://unpkg.com/scrollreveal">
-  
-</script>
-</body>
+      translateButton.addEventListener("click", () => {
+        left.style.transform += "translateX(-80px)";
+        right.style.transform += "translateX(80px)";
+        setTimeout(() => {
+          main.classList.add("bcimage");
+          left.style.transform = "translateX(50px)";
+          right.style.transform = "translateX(-50px)";
+          setTimeout(() => {
+            left.style.display = "none";
+            right.style.display = "none";
+            center.style.display = "none";
+            end.style.display = "block";
+            setTimeout(() => {
+              end.style.transition = "transform 5s ease-in-out";
+              end.style.transform = "scale(3.7)";
+              setTimeout(() => {
+                end.style.display = "none";
+                last.style.display = "block";
+                setTimeout(() => {
+                  component1.classList.add("componenthide");
+                  component2.classList.add("componentshow");
+                }, 1000);
+              }, 3000);
+            }, 200);
+          }, 500);
+        }, 500);
+      });
+      let next = document.getElementById("next");
+      let backtohome = document.getElementById("backtohome");
+      let back = document.getElementById("back");
+
+      let firstForm = document.querySelector(".first");
+      let secondForm = document.querySelector(".second");
+      let thirdForm = document.querySelector(".third");
+
+      next.addEventListener("click", () => {
+        firstForm.style.display = "none";
+        secondForm.style.display = "block";
+      });
+      back.addEventListener("click", () => {
+        firstForm.style.display = "block";
+        secondForm.style.display = "none";
+        thirdForm.style.display = "none";
+      });
+
+      const form = document.getElementById("myForm");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const elements = form.elements;
+        const values = {};
+
+        for (let i = 0; i < elements.length; i++) {
+          const element = elements[i];
+          const elementType = element.type;
+          const elementName = element.name;
+
+          if (
+            elementType === "text" ||
+            elementType === "select-one" ||
+            elementType === "date" ||
+            elementType === "number" ||
+            elementType === "email"
+          ) {
+            values[elementName] = element.value;
+          } else if (elementType === "radio") {
+            if (element.checked) {
+              values[elementName] = element.value;
+            }
+          } else if (elementType === "checkbox") {
+            if (!values[elementName]) {
+              values[elementName] = [];
+            }
+
+            if (element.checked) {
+              values[elementName].push(element.value);
+            }
+          }
+        }
+        console.log(values);
+        firstForm.style.display = "none";
+        secondForm.style.display = "none";
+        thirdForm.style.display = "block";
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
