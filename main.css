@@ -1,0 +1,199 @@
+/* .background {
+  background: url("BG Image.jpg") no-repeat center fixed;
+  background-size: cover;
+  min-height: 100vh;
+   min-width: 100vw;  
+}
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Radley", serif;
+    line-height: 25px;
+    font-size: 17px;
+}
+*/
+#curser {
+  cursor: pointer;
+}
+
+.component2,
+.component5,
+.component3,
+.component4,
+.component6 {
+  display: none !important;
+}
+.componentshow {
+  display: block !important;
+}
+.componenthide {
+  display: none !important;
+}
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+.image-wrapper.left {
+  transform: translateX(-50px);
+}
+.image-wrapper.right {
+  transform: translateX(50px);
+}
+.image-wrapper.center {
+  transform: translateX(0px);
+}
+.image-wrapper.last {
+  display: none;
+}
+.end,
+.last {
+  display: none;
+}
+.bcimage {
+  background: url("./bg_img.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+.main {
+  min-height: 100vh;
+  position: relative;
+  background-color: #272d40;
+}
+p,
+h5,
+h2,
+h6,
+h4,
+h1,
+h3 {
+  color: #c7a530;
+}
+.textElement {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.form-input {
+  background: transparent;
+  border-color: none;
+  border: none;
+  background: var(--o-3-dark-navy, #272d40);
+  box-shadow: 3px -6px 25px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.form-input:focus {
+  background: transparent;
+  border-color: none;
+  box-shadow: none;
+  border: none;
+  color: white;
+  background: var(--o-3-dark-navy, #272d40);
+  box-shadow: 3px -6px 25px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+@media (max-width: 768px) {
+  .paragraph {
+    font-size: 22px !important;
+    line-height: 28px !important;
+  }
+  .arrow-align {
+    text-align: center !important;
+  }
+}
+
+/* form compnent */
+.form-control.form {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  transition: border-color 0.3s;
+  border-radius: 0;
+  color: white;
+}
+
+.form-control.form:hover,
+.form-control.form:focus,
+.form-control.form:active,
+.form-control.form:focus-visible {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #c2b59b;
+  box-shadow: none !important;
+}
+label {
+  color: #c2b59b !important;
+  margin-bottom: 0 !important;
+}
+.dots-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.dot1,
+.dot2,
+.dot3 {
+  width: 10px;
+  height: 10px;
+  background-color: #d4af33;
+  border-radius: 50%;
+ 
+}
+
+.connector {
+  width: 40px;
+  height: 2px;
+  background-color: #d4af33;
+}
+.dotactive {
+  opacity: 1 !important;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(66%) sepia(55%) saturate(25%) hue-rotate(237deg)
+    brightness(100%) contrast(96%);
+}
+
+.form-check-input {
+  border-color: #c2b59b;
+}
+.form-check-input:checked[type="checkbox"] {
+  background-image: url("./Vector.svg");
+  background-color: transparent;
+  border-color: #c2b59b;
+  box-shadow: none;
+}
+.form-check-input:focus {
+  box-shadow: none;
+  border-color: #c2b59b;
+}
+.form-check-input {
+  --bs-form-check-bg: transparent;
+  background-color: transparent;
+}
+.form-check-input:checked[type="radio"] {
+  background-image: url("./circle.svg");
+  background-color: transparent;
+  border-color: #c2b59b;
+  box-shadow: none;
+}
+.form-check-input:checked[type="radio"]:focus {
+  box-shadow: none;
+}
+.second,
+.third {
+  display: none;
+}
+@media (max-width: 768px) {
+  .imgcenter {
+    text-align: center;
+  }
+}
